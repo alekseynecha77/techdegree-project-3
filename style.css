@@ -13,14 +13,28 @@ div{
   margin-bottom: 10px;
 
 }
-label, input {
-  display: inline-block;
-  width: 150px;
-  text-align: left;
-  vertical-align: middle;
-
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+label {
+  flex: 0 0 120px;
+}
+
+input,
+select {
+  flex: 0 0 75%;
+}
+
+/*  */
+/* label, input { */
+  /* display: inline-block; */
+  /* width: 150px; */
+  /* text-align: left; */
+  /* vertical-align: middle; */
+/* } */
 
 
 form {
