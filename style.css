@@ -1,0 +1,117 @@
+*{ 
+  box-sizing: border-box;
+  
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+div{
+  margin-bottom: 10px;
+
+}
+label, input {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  vertical-align: middle;
+
+}
+
+
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 1em;
+}
+
+label {
+  font-weight: 300;
+  color: #98a0a8;
+  margin: 0;
+  line-height: 40px;
+}
+select{
+  color:black;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  width: 70%;
+  background-color: rgb(240, 240, 240);
+  margin: 6px 0;
+  left: auto;
+  border-radius: .3em;
+  padding: .5em;
+  border-bottom: 3px solid rgba(0,0,0, 0.05);
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-left: -20px;
+  transition: opacity 1s ease-in-out;
+}
+
+header, h1{
+  text-align: center;
+}
+hr{
+  border-top: 8px double #333;
+  color: #333;
+  overflow: visible;
+}
+h2{
+  font-size: 20px;
+}
+#zip{
+  width: 20%;
+}
+legend {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f3944;
+}
+.newsletter{
+  padding-top: 15px;
+  font-weight: 300;
+}
+input[type="radio"],
+input[type="checkbox"] {
+margin: 0 6px 8px 0;
+}
+fieldset{
+border: 0;
+}
+button {
+  background-color: #6cb8b4;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+::placeholder{
+  text-align: right;
+  color: #b1b1b1;
+  font-style: italic;
+}
+footer{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
