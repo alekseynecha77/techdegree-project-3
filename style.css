@@ -9,32 +9,18 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-div{
-  margin-bottom: 10px;
-
-}
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-label {
-  flex: 0 0 120px;
+label, input {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  vertical-align: middle;
 }
-
-input,
-select {
-  flex: 0 0 75%;
-}
-
-/*  */
-/* label, input { */
-  /* display: inline-block; */
-  /* width: 150px; */
-  /* text-align: left; */
-  /* vertical-align: middle; */
-/* } */
 
 
 form {
@@ -128,4 +114,28 @@ footer{
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  label {
+    flex: 0 0 120px;
+  }
+
+  input,
+  select {
+    flex: 0 0 75%;
+  }
+}
+
+.newsletter .row {
+  justify-content: flex-start;
+}
+
+.newsletter input {
+  flex-basis: auto;
 }
