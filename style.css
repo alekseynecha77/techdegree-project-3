@@ -17,7 +17,7 @@ body {
 
 label, input {
   display: inline-block;
-  width: 150px;
+  /* width: 150px; */
   text-align: left;
   vertical-align: middle;
 }
@@ -54,7 +54,7 @@ select {
   border-bottom: 3px solid rgba(0,0,0, 0.05);
   background-color: #e8eeef;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   transition: opacity 1s ease-in-out;
 }
 
@@ -130,10 +130,20 @@ footer{
   select {
     flex: 0 0 75%;
   }
+
+  .newsletter .row {
+    justify-content: flex-start;
+  }
+
+  .newsletter input {
+    width: auto;
+  }
 }
 
 .newsletter .row {
   justify-content: flex-start;
+  width: auto;
+  flex-basis: auto;
 }
 
 .newsletter input {
