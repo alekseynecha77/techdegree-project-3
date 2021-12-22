@@ -17,7 +17,6 @@ body {
 
 label, input {
   display: inline-block;
-  /* width: 150px; */
   text-align: left;
   vertical-align: middle;
 }
@@ -120,6 +119,9 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  form div{
+    display: flex;
   }
 
   label {
