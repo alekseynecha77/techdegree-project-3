@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
- 
+    <header>
+      <h1>THE CODE REVIEW</h1>
+    </header>
     <main>
       <section>
         <h2>Signup for our newsletter</h2>
@@ -26,7 +28,7 @@
           <fieldset>
             <legend id="contact">Contact Information</legend>
 
-            <div>
+            <div class="top">
               <label for="name">Full Name:</label>
               <input
                 type="text"
@@ -36,7 +38,7 @@
                 required
               />
             </div>
-            <div>
+            <div class="top">
               <label for="mail">Email Address:</label>
               <input
                 type="email"
@@ -46,15 +48,15 @@
                 required
               />
             </div>
-            <div>
+            <div class="top">
               <label for="phone">Phone-Number:</label>
               <input type="tel" id="phone" name="userPhone" />
             </div>
-            <div>
+            <div class="top">
               <label for="street">Street Address: </label>
               <input type="text" id="street" name="userStreet" />
             </div>
-            <div>
+            <div class="top">
               <label for="city">City: </label>
               <input type="text" id="city" name="userCity" />
             </div>
@@ -107,12 +109,14 @@
               <label for="other-topics"
                 >Other topics you'd like to hear about</label
               >
+              
               <textarea
-                id="other-topics"
-                rows="5"
-                cols="60"
-                name="other-topics"
-              ></textarea>
+              id="other-topics"
+              rows="5"
+              cols="60"
+              name="other-topics"
+             
+            ></textarea>
 
               <button type="submit" class="btn">Sign Up</button>
             </fieldset>
