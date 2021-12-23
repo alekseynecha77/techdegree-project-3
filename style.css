@@ -20,6 +20,20 @@ input {
   text-align: left;
   vertical-align: middle;
 }
+.border1 {
+  height: auto;
+  border-bottom: 3px solid black;
+  padding: 1px;
+  margin-top: 15px;
+  
+}
+
+.border2 {
+  height: auto;
+  border-bottom: 2px solid black;
+  padding: 1px;
+
+}
 
 form {
   margin: 0 auto;
@@ -88,8 +102,6 @@ input[type="checkbox"] {
   margin: 0 6px 8px 0;
 }
 fieldset {
-  display: flex;
-  flex-direction: column;
   border: 0;
 }
 button {
@@ -122,18 +134,39 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #zip {
+    width: 25%;
+  }
+  .top,
+  .top-zip {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
   form div {
     display: flex;
   }
 
+  
   label {
     flex: 0 0 120px;
   }
 
   input,
   select {
-    flex: 0 0 75%;
+    flex-basis: 75%;
+  }
+  #survey-form{
+    margin: auto;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(86, 88, 88);
   }
 
   .newsletter .row {
@@ -149,6 +182,7 @@ footer {
   justify-content: flex-start;
   width: auto;
   flex-basis: auto;
+  display: flex;
 }
 
 .newsletter input {
@@ -157,12 +191,7 @@ footer {
 #field2 {
   justify-content: space-between;
 }
-#newsletter {
-  font-size: 25px;
-  font-weight: bolder;
-  padding-top: 40px;
-  padding-bottom: 10px;
-}
+
 textarea {
   height: 100px;
   background-color: #e8eeef;
@@ -177,4 +206,11 @@ textarea {
   max-width: 100%;
   margin: 0 auto;
   border: 0;
+}
+
+main {
+  margin: 0 auto;
+}
+section {
+  text-align: center;
 }

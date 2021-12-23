@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Signup for our newsletter</h1>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
-      <hr />
-    </header>
+ 
     <main>
+      <section>
+        <h2>Signup for our newsletter</h2>
+
+        <p>Get the latest on how your code is doing right in your inbox</p>
+      </section>
+
+      <div class="border1"></div>
+      <div class="border2"></div>
+
+   
+
       <div class="container">
-        <form>
+        <form id="survey-form">
           <fieldset>
             <legend id="contact">Contact Information</legend>
 
@@ -51,7 +58,7 @@
               <label for="city">City: </label>
               <input type="text" id="city" name="userCity" />
             </div>
-            <div>
+            <div class="top">
               <label for="state">State:</label>
               <select name="state" id="state">
                 <option value="select">Choose State</option>
@@ -62,7 +69,7 @@
               </select>
             </div>
 
-            <div>
+            <div class="top-zip">
               <label for="zip">ZIP Code</label>
               <input type="text" pattern="[0-9]{5}" id="zip" />
             </div>
