@@ -33,7 +33,7 @@
               <input
                 type="text"
                 id="name"
-                name="userName"
+                name="name"
                 placeholder="Required"
                 required
               />
@@ -43,22 +43,22 @@
               <input
                 type="email"
                 id="mail"
-                name="userEmail"
+                name="mail"
                 placeholder="Required"
                 required
               />
             </div>
             <div class="top">
               <label for="phone">Phone-Number:</label>
-              <input type="tel" id="phone" name="userPhone" />
+              <input type="tel" id="phone" name="phone" placeholder="Required" required attr=""/>
             </div>
             <div class="top">
               <label for="street">Street Address: </label>
-              <input type="text" id="street" name="userStreet" />
+              <input type="text" id="street" name="street"  placeholder="Required" required />
             </div>
             <div class="top">
               <label for="city">City: </label>
-              <input type="text" id="city" name="userCity" />
+              <input type="text" id="city" name="city"  placeholder="Required" required/>
             </div>
             <div class="top">
               <label for="state">State:</label>
@@ -73,7 +73,7 @@
 
             <div class="top-zip">
               <label for="zip">ZIP Code</label>
-              <input type="text" pattern="[0-9]{5}" id="zip" />
+              <input type="text" pattern="[0-9]{5}" id="zip" name="zip" placeholder="Required" required />
             </div>
           </fieldset>
 
@@ -84,7 +84,7 @@
               <legend id="newsletter">Newsletter</legend>
               <h4>Select the newsletters you would like to receive</h4>
 
-              <input type="checkbox" id="html" name="html" value="html-news" />
+              <input type="checkbox" id="html" name="checkbox" value="html-news" />
               <label for="html">HTML News</label><br />
 
               <input type="checkbox" id="css" name="css" value="css-news" />
@@ -100,11 +100,11 @@
 
               <h4>Newsletter format</h4>
 
-              <input type="radio" id="html2" name="circle" value="html-2" />
-              <label for="html2">HTML</label><br />
+              <input type="radio" id="html2" name="choose" value="html-2" />
+              <label for="choose">HTML</label><br />
 
-              <input type="radio" id="plain" name="circle" value="plain-text" />
-              <label for="plain">Plain Text</label><br />
+              <input type="radio" id="text" name="choose" value="plain-text" />
+              <label for="choose">Plain Text</label><br />
 
               <label for="other-topics"
                 >Other topics you'd like to hear about</label
@@ -115,10 +115,11 @@
               rows="5"
               cols="60"
               name="other-topics"
+              placeholder="&quot;We writers are shy, nocturnal creatures.&quot;"
              
             ></textarea>
 
-              <button type="submit" class="btn">Sign Up</button>
+              <button type="submit" class="btn" name="submit">Sign Up</button>
             </fieldset>
           </div>
         </form>
