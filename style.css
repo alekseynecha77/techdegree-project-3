@@ -38,7 +38,8 @@ header h1 {
 }
 input:focus,
 textarea:focus,
-input:hover {
+input:hover,
+textarea:hover {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   transition-timing-function: 2s ease-in-out;
   outline: solid rgba(81, 203, 238, 1);
