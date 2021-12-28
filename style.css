@@ -57,6 +57,7 @@ input[type="tel"],
 textarea,
 select {
   border: none;
+  outline: none;
   border-radius: 5px;
   border-color: rgba(81, 203, 238, 1);
   margin: 8px 0;
