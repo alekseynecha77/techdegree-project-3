@@ -36,14 +36,6 @@ header h1 {
   justify-content: space-between;
   align-items: center;
 }
-input:focus,
-textarea:focus,
-input:hover,
-textarea:hover {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  transition-timing-function: 2s ease-in-out;
-  outline: solid rgba(81, 203, 238, 1);
-}
 
 label,
 input {
@@ -51,6 +43,34 @@ input {
   text-align: left;
   vertical-align: middle;
 }
+label {
+  font-weight: 400;
+  color: #706f70;
+  margin: 0;
+  line-height: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  border-radius: 5px;
+  border-color: rgba(81, 203, 238, 1);
+  margin: 8px 0;
+  padding: 18px 8px;
+  width: 100%;
+  box-shadow: 0 0 10px 0 rgba(81, 203, 238, 1);
+  transition: box-shadow 500ms;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: 0 10px 50px 0 rgba(81, 203, 238, 1);
+}
+
 .border1 {
   height: auto;
   border-bottom: 3px solid black;
@@ -68,44 +88,25 @@ form {
   padding: 6px;
 }
 
-label {
-  font-weight: 400;
-  color: #706f70;
-  margin: 0;
-  line-height: 40px;
-}
 select {
   color: black;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"],
-input[type="tel"],
-textarea,
-select {
-  margin-left: -20px;
-  transition: opacity 1s ease-in-out;
-  border: none;
-  border-radius: 5px;
-  margin: 8px 0;
-  padding: 18px 8px;
-  width: 100%;
-  background-color: rgb(219, 217, 217);
 }
 
 header,
 h1 {
   text-align: center;
 }
+
 hr {
   border-top: 8px double #333;
   color: #333;
   overflow: visible;
 }
+
 h2 {
   font-size: 20px;
 }
+
 #zip {
   width: 50%;
 }
