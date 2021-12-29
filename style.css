@@ -50,6 +50,11 @@ label {
   line-height: 40px;
 }
 
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 6px 8px 0;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -123,10 +128,7 @@ legend {
   padding-top: 15px;
   font-weight: 300;
 }
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 6px 8px 0;
-}
+
 fieldset {
   margin: 0;
   border: 0;
