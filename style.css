@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -72,8 +73,8 @@ select {
   transition: box-shadow 500ms;
 }
 
-input:hover,
-textarea:hover {
+input:focus,
+textarea:focus {
   box-shadow: 0 10px 50px 0 rgba(81, 203, 238, 1);
 }
 
